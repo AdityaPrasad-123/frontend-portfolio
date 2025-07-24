@@ -19,16 +19,16 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-4 py-2">
         {/* Logo */}
         <div className="flex items-center">
-          <img
+         <Link to='/' className='cursor-pointer'><img
             className="rounded-full w-14 h-14 mr-2"
             src={Aditya}
             alt="Logo"
-          />
+          /></Link> 
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden sm:flex space-x-6 text-xl font-medium">
-          <li><Link className="hover:text-amber-700" to="/home">Home</Link></li>
+          <li><Link className="hover:text-amber-700" to="/">Home</Link></li>
           <li><Link className="hover:text-amber-700" to="/about">About Me</Link></li>
           <li><Link className="hover:text-amber-700" to="/education">Education</Link></li>
           <li><Link className="hover:text-amber-700" to="/project">Projects</Link></li>
@@ -64,7 +64,7 @@ const Navbar = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="sm:hidden px-4 pb-4 space-y-2 text-lg font-medium">
-          <Link className="block hover:text-amber-700" to="/home">Home</Link>
+          <Link className="block hover:text-amber-700" to="/">Home</Link>
           <Link className="block hover:text-amber-700" to="/about">About Me</Link>
           <Link className="block hover:text-amber-700" to="/education">Education</Link>
           <Link className="block hover:text-amber-700" to="/project">Projects</Link>

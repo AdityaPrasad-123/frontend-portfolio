@@ -4,61 +4,67 @@ import Navbar from "../src/assets/Components/Navbar";
 
 const About = () => {
   return (
-    <>
-    <Navbar/>
+   <>
+  <Navbar />
+  <div className="bg-black text-white px-4 py-10">
+    <h1 className="text-center font-medium text-3xl text-amber-600">
+      About <span className="text-white">me</span>
+    </h1>
 
-    <div className=' bg-black h-full text-white'><br/><br/>
-         <h1 className='text-center font-medium text-3xl text-amber-600 mt-15'>About<span className='text-white'>me</span></h1>
-                <div className='grid sm:grid-cols-2 grid-cols-1 py-8 mt-4'>
-                <div className='w-auto'>
-                    <img className='sm:h-90 h-80  w-[300px] ml-15  rounded-2xl hover:border-amber-700 hover:border-3' src={Aditya} alt=''/>
-                </div>
-                <div className='w-[700px] ml-2 px-2'>
-                    <br/>
-                    <h1 className='sm:text-3xl text-2xl px-15 hover:text-emerald-300 sm:hover:text-4xl hover:text-2xl'> Hello,My name is<br/>Aditya Prasad Yadav</h1><br/>
-                    <p className='w-[400px] sm:w-[800px]'><span className=' text-xl  py-2'>I am experienced Mern Stack developer with over a decode of professional expertise in the field.
-                    Throughout my carrer,i have had the privilege of collaborating with prestigious organiztions,
-                    My passions for Mern Stack Development is not only reflected in my extenseive experience but also in the enthusiasm and dedicating i bring to each project.</span></p>
-                </div>
-            </div>
-            
-            <br/>
-            <br/>
-
-            <div className='bg-black h-screen text-white w-auto'>
-           <h1 className=' text-3xl font-medium text-center text-amber-900 py-10'>skills</h1><br/>
-            <h2 className='text-xl py-3 sm:ml-130 ml-5  hover:text-amber-700 hover:text-2xl'>Html</h2>
-            <hr className='sm:w-[700px] w-[350px] font-stretch-50% text-3xl sm:ml-130 ml-5 text-shadow-amber-300 transform duration-500 hover:scale-1'/>
-            <h2 className='text-xl py-3 sm:ml-130 ml-5  hover:text-amber-700 hover:text-2xl'>CSS</h2>
-            <hr className='sm:w-[680px] w-[350px] font-extrabold font-stretch-50% text-3xl sm:ml-130 ml-5 text-shadow-amber-300 transform duration-500 hover:scale-1'/>
-            <h2 className='text-xl py-3 sm:ml-130 ml-5  hover:text-amber-700 hover:text-2xl'>Javascript</h2>
-            <hr className='sm:w-[600px] w-[290px] font-stretch-50% text-3xl sm:ml-130 ml-5 text-shadow-amber-300 transform duration-500 hover:scale-1'/>
-            <h2 className='text-xl py-3 sm:ml-130 ml-5  hover:text-amber-700 hover:text-2xl'>Reactjs</h2>
-            <hr className='sm:w-[580px] w-[270px] font-stretch-50% text-3xl sm:ml-130 ml-5 text-shadow-amber-300 transform duration-500 hover:scale-1'/>
-            <h2 className='text-xl py-3 sm:ml-130 ml-5  hover:text-amber-700 hover:text-2xl'>Nodejs</h2>
-            <hr className='sm:w-[550px] w-[300px] font-stretch-50% text-3xl sm:ml-130 ml-5 text-shadow-amber-300 transform duration-500 hover:scale-1'/>
-            <h2 className='text-xl py-3 sm:ml-130 ml-5  hover:text-amber-700 hover:text-2xl'>Expressjs</h2>
-            <hr className='sm:w-[520px] w-[250px] font-stretch-50% text-3xl sm:ml-130 ml-5 text-shadow-amber-300 transform duration-500 hover:scale-1'/>
-            <h2 className='text-xl py-3 sm:ml-130 ml-5  hover:text-amber-700 hover:text-2xl'>Mongodb</h2>
-            <hr className='sm:w-[500px] w-[200px] font-stretch-50% text-3xl sm:ml-130 ml-5 text-shadow-amber-300 transform duration-500 hover:scale-1'/>
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center mt-10 max-w-6xl mx-auto">
+      <img
+        src={Aditya}
+        alt="Aditya"
+        className="rounded-2xl hover:border-amber-700 hover:border-2 w-full max-w-xs mx-auto"
+      />
+      <div className="text-left">
+        <h2 className="text-2xl md:text-3xl hover:text-emerald-300 mb-4">
+          Hello, My name is <br /> Aditya Prasad Yadav
+        </h2>
+        <p className="text-lg leading-relaxed">
+          I am an experienced MERN Stack developer with over a decade of
+          professional expertise in the field. Throughout my career, I have had
+          the privilege of collaborating with prestigious organizations. My
+          passion for MERN Stack development is reflected not only in my
+          extensive experience but also in the enthusiasm and dedication I bring
+          to each project.
+        </p>
+      </div>
     </div>
-            <div className='flex justify-around'>
-            <div className='mb-8'>
-              <h1 className='sm:text-3xl text-2xl font-medium px-11'>0-1</h1>
-              <h2 className='sm:text-2xl text-xl font-medium text-black bg-amber-50 rounded-full h-9 w-35 text-center'>Experience</h2>
-              
-            </div>
-            <div>
-              <h1 className='sm:text-3xl text-2xl font-medium px-11'>0-1</h1>
-              <h2 className='sm:text-2xl text-xl font-medium text-black bg-amber-50 rounded-full h-9 w-35 text-center'>Experience</h2>
-            </div>
 
-            
-
-            </div>
-
+    <div className="max-w-5xl mx-auto py-16">
+      <h1 className="text-3xl font-medium text-center text-amber-500 mb-10">
+        Skills
+      </h1>
+      {[
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+      ].map((skill, i) => (
+        <div key={i} className="mb-4">
+          <h2 className="text-xl hover:text-amber-700">{skill}</h2>
+          <hr className="border-amber-500 w-full max-w-[90%]" />
+        </div>
+      ))}
     </div>
-    </>
+
+    <div className="flex flex-col md:flex-row justify-around items-center py-8 gap-6">
+      {[1, 2].map((_, i) => (
+        <div key={i} className="text-center">
+          <h1 className="text-3xl font-medium">0-1</h1>
+          <h2 className="text-xl font-medium bg-amber-50 text-black rounded-full px-4 py-2 mt-2">
+            Experience
+          </h2>
+        </div>
+      ))}
+    </div>
+  </div>
+</>
+
   );
 };
     

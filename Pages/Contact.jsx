@@ -32,7 +32,7 @@ const Contact = () => {
 
   return (
     <><Navbar/>
-    <div className='bg-black text-white py-10 px-4 h-screen'>
+    <div className='bg-black text-white py-10 px-4 min-h-screen'>
       <h1 className='text-center font-medium text-3xl text-amber-800 hover:text-white mb-10'>Contact me</h1>
 
       <div className='flex flex-col md:flex-row bg-slate-950 rounded-lg shadow-md w-full h-auto'>

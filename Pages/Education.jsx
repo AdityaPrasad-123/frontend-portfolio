@@ -24,7 +24,7 @@ const Education = () => {
      <p className="sm:text-xl text-xl  text-center">
    Shree.Nepal Ratriya Highger Secondary School<br /> Bakuliya Bhawanipur,Bara Neapl</p>
    <button className="font-medium text-xl bg-amber-700 rounded-full w-30 cursor-pointer sm:ml-45 ml-25 mt-6 py-3">
-   see more
+      <a href="https://photos.google.com/photo/AF1QipOR6L5eaiZJ_YHyfP3eUbC0luv6Q7ziPIDmlMIY">see more</a>
    </button>
     </div> 
 
@@ -35,7 +35,7 @@ const Education = () => {
   <p className="sm:text-xl text-xl text-center">
    Shree.Nepal Ratriya Highger Secondary School<br /> Bakuliya Bhawanipur,Bara Neapl</p>
    <button className="font-medium text-xl bg-amber-700 rounded-full w-30 cursor-pointer sm:ml-45 ml-25 mt-6 py-3">
-    see more
+    <a href="https://photos.google.com/photo/AF1QipMyKM_G3qOAZelJr9tnFbdwAVCmiakZhe9xoNhU">see more</a>
   </button>
    </div> 
 
@@ -46,7 +46,7 @@ const Education = () => {
    <p className="sm:text-xl text-xl  text-center">
       Panipat Institute of Engineering & Technology<br /> Samalkha,Haryana</p>
     <button className="font-medium text-xl bg-amber-700 rounded-full w-30 cursor-pointer sm:ml-45 ml-25 mt-6 py-3">
-     see more
+     <a href="https://photos.google.com/photo/AF1QipNUEVA61yMfkvJhIe20v2ABu68MjzANfUMCXzx1">see more</a>
   </button>
 </div> 
 
